@@ -4,7 +4,8 @@
   "description": "template for events landing page",
   "main": "index.js",
   "dependencies": {
-    "eslint": "^4.7.1"
+    "eslint": "^4.7.1",
+    "webpack": "^3.6.0"
   },
   "devDependencies": {},
   "scripts": {
