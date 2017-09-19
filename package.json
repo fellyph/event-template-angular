@@ -1,0 +1,28 @@
+{
+  "name": "event-template-angular",
+  "version": "1.0.0",
+  "description": "template for events landing page",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^4.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fellyph/event-template-angular.git"
+  },
+  "keywords": [
+    "angular",
+    "node",
+    "html"
+  ],
+  "author": "fellyph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fellyph/event-template-angular/issues"
+  },
+  "homepage": "https://github.com/fellyph/event-template-angular#readme"
+}
