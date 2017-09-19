@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-GB" ng-app="conferenceApp">
 <head>
-
-  <!-- Basic Page Needs
-  ================================================== -->
-  <meta charset="utf-8">
-  <title>COMMERCIAL REAL ESTAE SUMMIT 2018</title>
-
   <!-- Mobile Specific Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="stylesheets/layout.css">
   <link rel="stylesheet" href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600|Raleway:900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  <script src="//code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
   <script src="js/script.js"></script>
 
-  <!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <title>COMMERCIAL REAL ESTAE SUMMIT 2018</title>
 
   <!-- Favicons
 	================================================== -->
@@ -36,27 +25,44 @@
 
 <body ng-controller="mainController">
   <div class="container">
-    <div class="sixteen columns">
-      <img src="images/header-bg.jpg" alt="Commercial Real Estate Summit 2016" width="940" height="545" title="Commercial Real Estate Summit 2016"
-      />
-    </div>
-    <nav class="sixteen columns nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#positioning">Positioning</a></li>
-        <li><a href="#speakers">Speaker Line Up</a></li>
-        <li><a href="#register-core">Register Here</a></li>
-        <li><a href="#sponsors">Sponsored By</a></li>
-      </ul>
-    </nav>
-    <div class="sixteen" id="main">
+    <header class="header row">
+      <img src="images/header-bg.jpg" class="img-fluid banner" alt="Commercial Real Estate Summit 2016" title="Commercial Real Estate Summit 2016" />
+      <nav class="main-menu">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#positioning">Positioning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Speaker Line Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#register-core">Register Here</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sponsors">Sponsored By</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <section class="row" id="main">
       <div class="page {{pageClass}}" ng-view></div>
-    </div>
-    <div class="sixteen columns">
+    </section>
+    
+    <footer class="row">
+      <header>
+        <time>{{date}}</time> <span class="where">{{where}}</span>
+      </header>
       <img src="images/sponsors.jpg" />
-    </div>
-
+    </footer>
+    <!-- footer -->
   </div>
+  <!-- .containter -->
+  <script src="//code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
-
 </html>
