@@ -1,487 +1,68 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en-GB" ng-app="conferenceApp">
 <head>
 
-	<!-- Basic Page Needs
+  <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>COMMERCIAL REAL ESTAE SUMMIT 2018</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+  <meta charset="utf-8">
+  <title>COMMERCIAL REAL ESTAE SUMMIT 2018</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-	<!-- Mobile Specific Metas
+  <!-- Mobile Specific Metas
   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- CSS
+  <!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600|Raleway:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="stylesheets/skeleton.css">
+  <link rel="stylesheet" href="stylesheets/layout.css">
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700,600|Raleway:900' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+  <script src="js/script.js"></script>
 
-	<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-	<!-- Favicons
+  <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 </head>
-<body>
-	<!-- Primary Page Layout
+
+<body ng-controller="mainController">
+  <!-- Primary Page Layout
 	================================================== -->
-	<div class="container">
-		<div class="sixteen columns">
-			<img src="images/header-bg.jpg" alt="Commercial Real Estate Summit 2016" width="940" height="545" title="Commercial Real Estate Summit 2016" />		</div>
-		<div class="sixteen columns nav">
-        	<ul>
-            	<li><a href="positioning.html">Positioning</a></li>
-                <li><a href="speakers.html">Speaker Line Up</a></li>
-                <li><a href="register-core.html">Register Here</a></li>
-                <li><a href="sponsors.html">Sponsored By</a></li>
-            </ul>
-        </div>
-		<div class="sixteen columns">
-        <div class="maincolumn">
-            <div class="content">
-                <h2>Register Now</h2>
-                <p><span style="color:#1e5aa0; font-weight:bold">Date: Wednesday 31st January 2018        Venue: The RDS - Dublin</span></p>
-                <p>The Commercial real estate sector has witnessed a dramatic turnaround in the last 3 years. Foreign Inward investment continues at pace, unemployment is now approaching an historic low and the opportunity presented by BREXIT suggests the sector will continue to grow strongly in the next two years.</p>
-              <ul>
-                <li>1.15 pm: Registration opens </li>
-                <li>1.45 pm: Conference commences</li>
-                <li>4.45 pm: Conference closes followed by  reception </li>
-              </ul>
-                <p>There is no charge for registration.</p>
-                <div class="floatright">
-               	  <p style="text-align:center"><a href="http://www.coreconsulting.ie" target="_blank"><img src="images/core.gif" alt="Core Consulting" title="Core Consulting" /></a></p>
-                	<p style="color:#999">CORE CONSULTING, as the party who controls the data collected in this online registration may use your reply to this registration together with existing data for the purpose of 'Commercial Real Estate Summit 2016' only . Data collected for the purpose of 'Commercial Real Estate Summit 2016' may be shared for registration purposes only with additional sponsors and supporters of this event.</p>
-                </div>
-<style>
-  ._form {
-  position:relative;
-  background:#fff;
-  width:400px;/*F*/
-  padding:0!important;
-  text-align:left;
-  }
-  ._form em {
-  color:#9a9a9a;
-  }
-  ._form a {
-  margin-left:3px;
-  }
-  ._form ._field,
-  ._form ._field ._label,
-  ._form ._type_radio,
-  ._form ._type_checkbox,
-  ._form ._type_captcha,
-  ._form ._field table {
-  background:none;
-  }
-  ._form ._field  {
-  position:relative;
-  width:100%;
-  cursor:move;
-  font-style:normal;
-  margin:1.2em 0;
-  padding:0;
-  overflow:hidden;
-  }
-  ._form ._field input[type="text"] {
-  width:95%;
-  padding:8px;
-  font-size:16px;
-  border:1px solid #b6b6b6;
-  }
-  ._form ._field ._label {
-  display:block;
-  margin:0 0 0.5em;
-  padding:0!important;
-  font-size:15px;
-  }
-  ._form ._field ._option input[type="checkbox"],
-  ._form ._field ._option input[type="radio"] {
-  position:relative;
-  width:13px;
-  height:13px;
-  margin:-4px 0 0;
-  cursor:pointer;
-  vertical-align:middle;
-  background:#fff;
-  }
-  ._form ._field ._option input[type="submit"],
-  ._form ._field ._option input[type="button"] {
-  margin:0;
-  cursor:pointer;
-  height:35px;
-  width:auto;
-  font-size:15px;
-  }
-  ._form ._field ._option select {
-  display:block;
-  margin:0;
-  padding:0;
-  width:auto;
-  font-size:15px;
-  border:1px solid #b6b6b6;
-  }
-  ._form ._type_radio ._option,
-  ._form ._type_checkbox ._option {
-  font-size:13px;
-  font-weight:normal;
-  line-height:1.8;
-  }
-  ._form ._type_date ._option input[type="text"] {
-  float:left;
-  width:100px;
-  }
-  ._form ._type_date ._option input[type="button"] {
-  width:37px;
-  height:36px;
-  margin-left:5px;
-  padding:20px;
-  background:url(http://ezine-ie.com/admin/css/../images/icon_calendar.gif) no-repeat 0 0;
-  border:none;
-  outline:none;
-  text-indent:-9999px;
-  }
-  ._form ._type_captcha img {
-  float:left;
-  margin:0 6px 0 0;
-  width:70px;
-  height:33px;
-  border:1px solid #b6b6b6;
-  }
-  ._form ._type_captcha input[type="text"] {
-  margin:-14px 0 0 0!important;
-  width:25%;
-  }
-  ._form ._field table  {
-  width:100%!important;
-  }
-  ._form ._field table tbody tr td  {
-  width:50%!important;
-  font-size:15px;
-  }
-  ._form {
-  width:400px;/*F*/
-  padding:16px!important;
-  background:#eff9fd;
-  color:#2c2c2c;
-  font-weight:normal;
-  border:1px solid #c4d5da;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
-  }
-  ._form #notice {
-  margin:10px 0 0 -3px!important;
-  padding:0;
-  color:#959c9f;
-  font-size:11px;
-  font-family:helvetica,arial,sans-serif;
-  }
-  ._form #notice a, ._form #notice a:visited {
-  color:#959c9f;
-  text-decoration:underline;
-  }
-  ._form ._field,
-  ._form ._field ._label,
-  ._form ._type_radio,
-  ._form ._type_checkbox,
-  ._form ._type_captcha,
-  ._form ._field table {
-  background:none;
-  }
-  ._form ._field  {
-  position:relative;
-  width:100%;
-  cursor:default;
-  font-style:normal;
-  margin:0 0 16px!important;
-  padding:0!important;
-  overflow:hidden;
-  }
-  ._form ._field input[type="text"],
-  ._form ._field input[type="email"] {
-  width:97%;
-  margin:0!important;
-  padding:4px!important;
-  font-size:16px;
-  border:1px solid #b4c5cb;
-  border-top:1px solid #a5b4b9;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  border-radius:3px;
-  }
-  ._form ._field ._label {
-  margin:0 0 0.3em!important;
-  color:#546f79;
-  font-size:14px;
-  font-family:helvetica,arial,sans-serif;
-  font-weight:700;
-  }
-  ._form ._field ._option {
-  margin:0;
-  padding:0;
-  color:#546f79;
-  font-size:13px;
-  font-family:helvetica,arial,sans-serif;
-  font-weight:normal;
-  line-height:20px;
-  }
-  ._form ._type_header ._label {
-  width:100%;
-  font-style:normal;
-  font-size:20px!important;
-  line-height:24px;
-  color:#546f79;
-  margin:0 0 5px!important;
-  padding:0 0 10px!important;
-  overflow:hidden;
-  border-bottom:1px solid #e0e0e0;
-  }
-  ._form ._type_input ._option textarea{
-  width:97%!important;
-  background:#fafafa;
-  border:1px solid #b4c5cb;
-  border-top:1px solid #a5b4b9;
-  -webkit-border-radius:3px;
-  -moz-border-radius:3px;
-  border-radius:3px;
-  }
-  ._form ._field ._option input[type="submit"],
-  ._form ._field ._option input[type="button"] {
-  width:auto;
-  margin:10px 0 0!important;
-  padding:8px 15px!important;
-  cursor:pointer;
-  font-family:helvetica,arial,sans-serif;
-  font-weight:700;
-  font-size:16px;
-  color:#ffffff;
-  background:#82aebe;
-  border:1px solid #6a9eb0;
-  border-bottom:1px solid #5f8e9f;
-  -webkit-border-radius:4px;
-  -moz-border-radius:4px;
-  border-radius:4px;
-  text-shadow:0px 1px 1px #5f8e9f!important;
-  }
-  ._form ._type_input ._option input[type="submit"]:hover,
-  ._form ._type_input ._option input[type="button"]:hover {
-  background:#6494a6;
-  }
-  ._form ._type_radio ._option label {
-  display:inline;
-  font-size:16px;
-  font-weight:normal;
-  line-height:18px;
-  }
-  ._form ._type_radio ._option label input[type="radio"] {
-  position:relative;
-  width:13px;
-  height:13px;
-  margin:-4px 0 0!important;
-  cursor:pointer;
-  vertical-align:middle;
-  background:#fff;
-  border:none;
-  line-height:18px;
-  }
-  ._form ._type_date ._option input[type="text"] {
-  float:left;
-  width:100px;
-  }
-  ._form ._type_date ._option input[type="button"] {
-  float:left;
-  width:24px;
-  height:24px;
-  margin:2px 0 0 5px!important;
-  padding:0;
-  background:url(http://ezine-ie.com/admin/templates/form-themes/simple-blue/images/icon_calendar.gif) no-repeat;
-  border:none;
-  outline:none;
-  text-indent:-9999px;
-  }
-  ._form ._field ._option select {
-  display:block;
-  margin:0;
-  padding:0;
-  width:auto;
-  font-size:16px;
-  border:1px solid #cce0e7;
-  }
-  ._form ._type_captcha img {
-  float:left;
-  width:88px;
-  height:44px;
-  margin:0 6px 0 0;
-  border:1px solid #cce0e7;
-  }
-  ._form ._type_captcha input[type="text"] {
-  margin:0!important;
-  width:40%;
-  font-size:16px;
-  }
-  ._form ._field table {
-  margin:0;
-  padding:0;
-  border-collapse:collapse;
-  width:100%!important;
-  table-layout:fixed;
-  margin-bottom:18px;
-  font-size:13px!important;
-  border-collapse:collapse;
-  border-spacing:0;
-  }
-  ._form ._field table td {
-  padding:0 10px 0 0!important;
-  line-height:18px;
-  text-align:left;
-  font-size:13px!important;
-  color:#606060;
-  }
-  ._form ._type_input ._option  table tbody#_forward_rcpt input {margin:0 0 5px 0!important; width:96%!important;}
-  ._form ._type_input ._option  table tbody#_forward_rcpt img.image_addrcpt {cursor:pointer;}
-  .form_errors{
-  text-align:center;
-  font-size:15px;
-  margin:10px;
-  color:#900;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight:bold;
-  margin-bottom:20px;
-  }
-</style>
-<form action='http://ezine-ie.com/proc.php' method='post' id='_form_2826' accept-charset='utf-8' enctype='multipart/form-data'>
-  <input type='hidden' name='f' value='2826'>
-  <input type='hidden' name='s' value=''>
-  <input type='hidden' name='c' value='0'>
-  <input type='hidden' name='m' value='0'>
-  <input type='hidden' name='act' value='sub'>
-  <input type='hidden' name='nlbox[]' value='139'>
-  <div class='_form'>
-    <div class='formwrapper'>
-      <div id='_field5695'>
-        <div id='compile5695' class='_field _type_input'>
-          <div class='_label '>
-            Email *
-          </div>
-          <div class='_option'>
-            <input type='email' name='email' >
-          </div>
-        </div>
-      </div>
-      <div id='_field5700'>
-        <div id='compile5700' class='_field _type_input'>
-          <table cellpadding='0' cellspacing='0'>
-            <tr>
-              <td>
-                <div class='_label '>
-                  First Name
-                </div>
-              </td>
-              <td>
-                <div class='_label '>
-                  Last Name
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class='_option'>
-                  <input type='text' name='firstname' >
-                </div>
-              </td>
-              <td>
-                <div class='_option'>
-                  <input type='text' name='lastname' >
-                </div>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div id='_field5697'>
-        <div id='compile5697' class='_field _type_input'>
-          <div class='_label '>
-            Company
-          </div>
-          <div class='_option'>
-            <input type='text' name='field[91]' value=''>
-          </div>
-        </div>
-      </div>
-      <div id='_field5698'>
-        <div id='compile5698' class='_field _type_input'>
-          <div class='_label '>
-            Office Phone Number
-          </div>
-          <div class='_option'>
-            <input type='text' name='field[92]' value=''>
-          </div>
-        </div>
-      </div>
-      <div id='_field5699'>
-        <div id='compile5699' class='_field _type_input'>
-          <div class='_label '>
-            Mobile Number
-          </div>
-          <div class='_option'>
-            <input type='text' name='field[93]' value=''>
-          </div>
-        </div>
-      </div>
-      <div id='_field5701'>
-        <div id='compile5701' class='_field _type_checkbox'>
-          <div class='_label '>
-            Opt In
-          </div>
-          <div class='_option'>
-            <div>
-              <label>
-                <input type='hidden' name='field[95][]' value='~|'>
-              </label>
-            </div>
-            <div>
-              <label>
-                <input type='checkbox' name='field[95][]' value='I agree to receive email communications in relation to this conference only' >
-                I agree to receive email communications in relation to this conference only
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id='_field5696'>
-        <div id='compile5696' class='_field _type_input'>
-          <div class='_option'>
-            <input type='submit' value='Submit'>
-          </div>
-        </div>
-      </div>
+  <div class="container">
+    <div class="sixteen columns">
+      <img src="images/header-bg.jpg" alt="Commercial Real Estate Summit 2016" width="940" height="545" title="Commercial Real Estate Summit 2016"
+      /> </div>
+    <div class="sixteen columns nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#positioning">Positioning</a></li>
+        <li><a href="#speakers">Speaker Line Up</a></li>
+        <li><a href="#register-core">Register Here</a></li>
+        <li><a href="#sponsors">Sponsored By</a></li>
+      </ul>
     </div>
+    <div class="sixteen" id="main">
+      <div class="page {{pageClass}}" ng-view></div>
+    </div>
+    <div class="clear"></div>
+    <div class="sixteen columns">
+      <img src="images/sponsors.jpg" />
+    </div>
+
   </div>
-</form>
-            </div>
-            <div class="clear"></div>
-        </div>
-        </div>   
-        
-		<div class="sixteen columns">
-        	<img src="images/sponsors.jpg" />
-        </div>   
-                     
-	</div><!-- container -->
-<!-- End Document
+  <!-- container -->
+  <!-- End Document
 ================================================== -->
 </body>
+
 </html>
