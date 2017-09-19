@@ -6,20 +6,33 @@ conferenceApp.config( function($routeProvider) {
         templateUrl : 'pages/home.html',
         controller: 'mainController'
       })
-
       .when('/positioning', {
         templateUrl : 'pages/positioning.html',
         controller : 'positioningController'
       })
-
       .when('/speakers', {
         templateUrl: 'pages/speakers.html',
         controller: 'speakersConttroller'
       })
-
       .when('/sponsors', {
         templateUrl: 'pages/sponsors.html',
         controller: 'sponsorsConttroller'
+      })
+      .when('/confirmation', {
+        templateUrl: 'pages/confirmation.html',
+        controller: 'confirmationConttroller'
+      })
+      .when('/map', {
+        templateUrl: 'pages/map.html',
+        controller: 'mapConttroller'
+      })
+      .when('/oops', {
+        templateUrl: 'pages/oops.html',
+        controller: 'oopsConttroller'
+      })
+      .when('/register', {
+        templateUrl: 'pages/register.html',
+        controller: 'registerConttroller'
       })
 });
 
@@ -37,4 +50,20 @@ conferenceApp.controller('speakersConttroller', function($scope) {
 
 conferenceApp.controller('sponsorsConttroller', function($scope) {
   $scope.message = 'page-sponsors';
+});
+
+conferenceApp.controller('registerConttroller', function($scope) {
+  $scope.message = 'page-register';
+});
+
+conferenceApp.controller('oopsConttroller', function($scope) {
+  $scope.message = 'page-oops';
+});
+
+conferenceApp.controller('mapConttroller', function($scope) {
+  $scope.message = 'page-map';
+});
+
+conferenceApp.controller('confirmationConttroller', function($scope) {
+  $scope.message = 'page-confirmation';
 });
